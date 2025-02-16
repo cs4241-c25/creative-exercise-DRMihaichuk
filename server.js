@@ -84,11 +84,10 @@ async function run() {
 const appRun = run();
 
 function scalePoints(points, size) {
-    const pnts = points.map(point => ({
+    return points.map(point => ({
         x: point.x * size,
         y: point.y * size
     }));
-    return pnts;
 }
 
 function extractPoints(polygonString) {
